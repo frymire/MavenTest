@@ -18,24 +18,11 @@
 
   <dependencies>
 
-    <!-- JUnit -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
-    </dependency>
-
-    <!-- log4j -->
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-api</artifactId>
-      <version>2.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-core</artifactId>
-      <version>2.5</version>
     </dependency>
 
   </dependencies>
@@ -56,6 +43,7 @@
       <filter>src/main/filters/filter.properties</filter>
     </filters>
 
+    <!-- Tell the jar plug-in where to find the custom manifest file. -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
