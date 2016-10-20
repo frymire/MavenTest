@@ -6,7 +6,6 @@
   <groupId>us.dac.frymire</groupId>
   <artifactId>POMTest</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
 
   <name>POM Test</name>
   <description>This is a test of Maven and POMs.</description>
@@ -43,18 +42,27 @@
       <filter>src/main/filters/filter.properties</filter>
     </filters>
 
-    <!-- Tell the jar plug-in where to find the custom manifest file. -->
+    <!-- Tell the jar plug-in how to set the application entry point. -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <configuration>
           <archive>
-            <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+
+            <!-- Either specify a file with entries to append to the manifest 
+              <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile> -->
+
+            <!-- ...or specify the entry point directly. -->
+            <manifest>
+              <mainClass>io.github.frymire.Hi</mainClass>
+            </manifest>
+
           </archive>
         </configuration>
       </plugin>
     </plugins>
+
 
   </build>
 
