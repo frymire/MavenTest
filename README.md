@@ -25,4 +25,4 @@ To generate it and run it in Jetty, do this
 
 	> mvn site:run
 	
-Point your browser to [http://localhost:8080/].
+Point your browser to [http://localhost:8080/](http://localhost:8080/).
