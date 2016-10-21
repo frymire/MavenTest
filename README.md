@@ -15,6 +15,14 @@ Or, you can double-click the jar. You won't see much for command line applicatio
 but it works in this case because this is a Swing application.
 
 
+## Filters
+
+If you want to inject a property specified on the command line, do something like this:
+
+	> mvn package "-Dcommand.line.prop=Hello again!"
+
+Check for the result in 'target/classes/application.properties'.
+
 ## API Documentation
 
 Generate the documentation with
