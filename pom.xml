@@ -80,8 +80,6 @@
           </execution>
         </executions>
         <configuration>
-          <reportOutputDirectory>${project.build.directory}/site</reportOutputDirectory>
-          <destDir>../doc</destDir>
           <additionalparam>-Xdoclint:none</additionalparam>
         </configuration>
       </plugin>
@@ -135,8 +133,6 @@
         <!-- Specify a custom location for the documentation, and disable 
           oppressive javadoc doclint checks that result in missing documentation. -->
         <configuration>
-          <reportOutputDirectory>${project.build.directory}/site</reportOutputDirectory>
-          <destDir>../doc</destDir>
           <additionalparam>-Xdoclint:none</additionalparam>
         </configuration>
 
